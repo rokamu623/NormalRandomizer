@@ -20,6 +20,6 @@ def data_histgram(data_list: list[int], num_of_divisions: int):
     hist_tuple = pyplot.hist(data_list, num_of_divisions)
     return list(hist_tuple[0]), list(hist_tuple[1])
 
-def show_histgram(hist, bins):
-    pyplot.hist(hist, bins)
+def show_histgram(data_list: list[int], num_of_divisions: int):
+    pyplot.hist(data_list, num_of_divisions)
     pyplot.show()
